@@ -51,17 +51,23 @@ public class SurveyActivity extends AppCompatActivity {
         mNoButton = (Button) findViewById(R.id.no_button); // find refernce id to no button
 
         addEventListeners(); //This adds listners
-        //totvotes = rico.nextLine();
-        //yesvotes = rico.nextInt();
 
-
-      if (yesVotes >= 0 + 1) {
-
-        } else {
-          System.out.println("yes_button" + yesVotes  + 1);
-      }
     }
+        public static void main (String [] args) {
+        int yesVotes;
 
+        for (yesVotes = 0; yesVotes <= 30; yesVotes++) {
+            System.out.println("total_yes_votes" + yesVotes);
+        }
+        }
+
+        // System.out.printlin(yesVotes);
+        // if (yesVotes >= 0 ) {
+       //  System.out.println("yes_button");
+       //} else {
+       //  System.out.println("yes_button" + (yesVotes));
+      // }
+      //}
 
    /*Configure event listner for all components.*/
 
