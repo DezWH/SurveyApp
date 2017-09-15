@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Survey App</string>
+    <string name="yes_button">YES</string>
+    <string name="no_button">NO</string>
+    <string name="question_organic_toothpaste">Have you ever used organic toothpaste?</string>
+    <string name="question_vickings">Are the Vikings going to win the Superbowl?</string>
+    <string name="question_organic_soda">Have your ever tried organic soda?</string>
+    <string name="question_mall_of_america">Have you ever shopped at the Mall of America?</string>
+    <string name="question_we_buy_black">As a student would you buy African products online?</string>
+    <string name="question_major">Have you declared your major?</string>
+    <string name="question_foreign_exchange">Will you become a foreign exchange student?</string>
+    <string name="question_smartphone">Do you use your smartphone to purchase household goods?</string>
+    <string name="question_qrcodes">Do you use QR Codes to purchase household items?</string>
+    <string name="question_african_village">Would you buy coffee online to fund waterwells in Africa?</string>
+    <string name="total_yes_votes">Total YES VOTES:</string>
+    <string name="total_no_votes">Total NO VOTES:</string>
+</resources>

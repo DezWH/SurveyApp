@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.dez.surveyapp.SurveyActivity">
+
+    <TextView
+        android:id="@+id/question_textview_view"
+        android:text="@string/question_organic_toothpaste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/yes_button"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/yes_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes_button"
+        tools:layout_editor_absoluteY="309dp"
+        android:layout_marginEnd="33dp"
+        android:layout_alignBaseline="@+id/no_button"
+        android:layout_alignBottom="@+id/no_button"
+        android:layout_toStartOf="@+id/no_button"/>
+
+
+    <Button
+        android:id="@+id/no_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_button"
+        tools:layout_editor_absoluteY="309dp"
+        tools:layout_editor_absoluteX="191dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="143dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/question_textview_view"/>
+
+    <TextView
+        android:id="@+id/question_textview_viewyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/total_yes_votes"
+        tools:layout_editor_absoluteX="114dp"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/question_textview_viewno"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/question_textview_viewno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_no_votes"
+        tools:layout_editor_absoluteX="141dp"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/question_textview_view"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
