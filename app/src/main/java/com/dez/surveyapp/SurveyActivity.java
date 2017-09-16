@@ -34,6 +34,9 @@ public class SurveyActivity extends AppCompatActivity {
     TextView question_textview_viewno;
 
     int yesVotes = 0;
+    //yesVotes++;
+    // yesVotes = yesVotes + 1
+    //
     int noVotes = 0 ;
     double y = 1;
     private Button YesButton;
@@ -56,12 +59,14 @@ public class SurveyActivity extends AppCompatActivity {
         public static void main (String [] args) {
         int yesVotes;
 
-        for (yesVotes = 0; yesVotes <= 30; yesVotes++) {
+        for (yesVotes = 0; yesVotes <= 30; yesVotes++) {      // Method 1 to increment
             System.out.println("total_yes_votes" + yesVotes);
+
+
         }
         }
 
-        // System.out.printlin(yesVotes);
+        // System.out.printlin(yesVotes);                     //Method 2 to increment
         // if (yesVotes >= 0 ) {
        //  System.out.println("yes_button");
        //} else {
