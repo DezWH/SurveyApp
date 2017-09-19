@@ -6,8 +6,6 @@ Purpose: Take a Survey of Students Answer
 Github: https://github.com/DezWH/SurveyApp.git
  */
 
-
-
 package com.dez.surveyapp;
 
 import android.support.v7.app.AppCompatActivity;
@@ -20,28 +18,21 @@ import android.widget.TextView;
 import android.util.Log;
 import android.view.Menu;
 import java.util.Scanner;
-
+//https://gist.github.com/minneapolis-edu/e078bb10428a38595b6741c362606655
 
 //https://www.youtube.com/watch?v=LzhNsd9ut_4
 public class SurveyActivity extends AppCompatActivity {
-    //  private static final String =
+
     //Buttons
 
     private Button mYesButton;
     private Button mNoButton;
-    private TextView mQuestionTextView;
     TextView question_textview_viewyes;
     TextView question_textview_viewno;
 
     int yesVotes = 0;
-    //yesVotes++;
-    // yesVotes = yesVotes + 1
-    //
-    int noVotes = 0 ;
-    double y = 1;
-    private Button YesButton;
+    int noVotes = 0;
 
-    //Scanner rico = new Scanner(System.in);
 
     //Wiring up TextView "Yes Button" SurveyActivity
     @Override
@@ -49,32 +40,18 @@ public class SurveyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
-        //Find reference id to yes button
+        //Find reference id to yes and no button
         mYesButton = (Button) findViewById(R.id.yes_button);
         mNoButton = (Button) findViewById(R.id.no_button); // find refernce id to no button
 
-        addEventListeners(); //This adds listners
+        // mQuestionTextView= (TextView) findViewById(R.id.mQuestionTextView);
+        // Find reference to TextView, question_textview_viewno and question_textview_viewyes
+        question_textview_viewyes = (TextView) findViewById(R.id.question_textview_viewyes);
+        question_textview_viewno = (TextView) findViewById(R.id.question_textview_viewno);
 
+
+        addEventListeners(); //This adds the Eventlistners
     }
-        public static void main (String [] args) {
-        int yesVotes;
-
-        for (yesVotes = 0; yesVotes <= 30; yesVotes++) {      // Method 1 to increment
-            System.out.println("total_yes_votes" + yesVotes);
-
-
-        }
-        }
-
-        // System.out.printlin(yesVotes);                     //Method 2 to increment
-        // if (yesVotes >= 0 ) {
-       //  System.out.println("yes_button");
-       //} else {
-       //  System.out.println("yes_button" + (yesVotes));
-      // }
-      //}
-
-   /*Configure event listner for all components.*/
 
     private void addEventListeners() {
 
@@ -82,13 +59,21 @@ public class SurveyActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                yesVotes++; //increment
+                question_textview_viewyes.setText("Total YES VOTES: " + yesVotes);
+
             }
         });
         mNoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                noVotes++; //increment
+                question_textview_viewno.setText("Total NO VOTES: " + noVotes);
             }
         });
+
     }
 }
+
 
